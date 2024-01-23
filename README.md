@@ -1,10 +1,8 @@
-# Repository of FEM axial impact simulations of the crash box
+# Repository of: FEM axial impact simulations of the crash box
 
-**Dataset used in GAMM 23 article. (link)**
-
-*License?*
+**This repository contains the database generated to be used in machine learning (ML) methods in the GAMM 23 article. (link)**
+The content of this repository can be used as per *License?*.
 ---
-
 
 ---
 ### LBA
