@@ -13,6 +13,8 @@ Every structure contains some form of manufacturing or material impurities and t
 
 **_script for eigenmode analysis?_**
 
+The script '00_Script_new_eigen' generates the model database and 'random seed' controls the randomness of the model variables, namely random variation of thickness and impact velocity in their respective limit.
+
 ```
     imperfection_scale = str(thickness*0.01)
     
@@ -24,12 +26,16 @@ Every structure contains some form of manufacturing or material impurities and t
 
 The imperfection is defined as nodal displacement in the script to generate an impact simulation model and is 1% of the thickness of the crash box. These eigenmodes are saved in the file 'Eigen_Job-(ii-1)', where ii job ID.
 
+At the end of Simulations 'model_database_eigen_sims' CSV file is generated which contains all the design variables of the crash box and impactor.
+
 ---
 ### Impact simulations
 
 **_script for impact analysis?_**
 
-The axial impact simulations are performed on the imperfect crash box. The complete FEM model properties are illustrated in the following table.
+The script '00_Script_new_impact_sim_w_imperfection' generates the model database similar to eigenmode analysis and following the command inserts the imperfection in the crash box structure. Then axial impact simulations are performed on the imperfect crash box. 
+
+The complete FEM model properties are illustrated in the following table.
 
 ### FEM settings
 
@@ -40,6 +46,9 @@ The axial impact simulations are performed on the imperfect crash box. The compl
 | Simulation time  | 0.05 s  |
 | Contact | Frictional coefficient=0.25/ normal "Hard" contact |
 | Impact initial velocity  | As per configuration (listed in the database) |
+
+At the end of Simulations 'model_database_dynamic_impact_sims' CSV file is generated which contains all the design variables of the crash box and impactor.
+
 ---
 ### Data parsing 
 
