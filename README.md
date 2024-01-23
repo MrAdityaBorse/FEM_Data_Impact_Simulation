@@ -2,9 +2,15 @@
 
 Dataset used in GAMM 23 article. (link)
 
+---
 ### LBA
+---
 ### Numerical imperfection + Impact sim
 ### FEM settings
+---
 ### Data parsing 
+---
 ### Model database
+---
 ## Acknowlegment
+---
