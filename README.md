@@ -1,4 +1,4 @@
-# FEM_Data_Impact_Simulation
+# Repository of FEM axial impact simulations of the crash box
 
 **Dataset used in GAMM 23 article. (link)**
 
