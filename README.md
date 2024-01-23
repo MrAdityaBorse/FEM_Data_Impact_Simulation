@@ -12,5 +12,5 @@ Dataset used in GAMM 23 article. (link)
 ---
 ### Model database
 ---
-## Acknowlegment
+### Acknowledgement
 ---
