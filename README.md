@@ -9,7 +9,7 @@ The crash box is one of the energy-absorbing structures in automobiles. Its defo
 ---
 ### Eigenmode analysis
 
-Every structure contains some form of manufacturing or material impurities and this is often unknown. These impurities affect the structural behaviour. Therefore, numerical imperfection is manually added to simulate the realistic deformations of the crash box. To ensure the imperfection is not arbitrary, linear combinations of eigenmodes are used *(ref)*. Therefore, initially, eigenmodes are investigated and used to define the numerical imperfection in the impact simulations.
+Every structure contains some form of manufacturing or material impurities and this is often unknown. These impurities affect the structural behaviour. Therefore, numerical imperfection is manually added to simulate the realistic deformations of the crash box. To ensure the imperfection is not arbitrary, linear combinations of eigenmodes are used [1]. Therefore, initially, eigenmodes are investigated and used to define the numerical imperfection in the impact simulations.
 
 **_script for eigenmode analysis???_**
 
@@ -69,8 +69,6 @@ The authors gratefully acknowledge the financial support provided by Deutsche Fo
 ---
 ### references
 
-1.  s sds
-2.  sdd
-3.  
+1.  J. Arbocz. Post-buckling behaviour of structures numerical techniques for more complicated structures, pages 83–142. Springer Berlin Heidelberg, Berlin, Heidelberg, 1987.
 
 ---
