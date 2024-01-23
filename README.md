@@ -24,7 +24,7 @@ The script '00_Script_new_eigen' generates the model database and 'random seed' 
 
 ```
 
-The imperfection is defined as nodal displacement in the script to generate an impact simulation model and is 1% of the thickness of the crash box. These eigenmodes are saved in the file 'Eigen_Job-(ii-1)', where ii job ID.
+The imperfection is defined as nodal displacement in the script to generate an impact simulation model and is 1% of the thickness of the crash box. These eigenmodes are saved in the file 'Eigen_Job-(ii-1)', where (ii-1) job ID.
 
 At the end of Simulations 'model_database_eigen_sims' CSV file is generated which contains all the design variables of the crash box and impactor.
 
@@ -47,17 +47,21 @@ The complete FEM model properties are illustrated in the following table.
 | Contact | Frictional coefficient=0.25/ normal "Hard" contact |
 | Impact initial velocity  | As per configuration (listed in the database) |
 
-At the end of Simulations 'model_database_dynamic_impact_sims' CSV file is generated which contains all the design variables of the crash box and impactor.
+At the end of Simulations 'model_database_dynamic_impact_sims' CSV file is generated which contains all the design variables of the crash box and impactor. Also, the output variables, energies, reaction forces and displacement, are also saved in file 'Dynamic_Job_ID_Energies_RF_U', where ID is job ID.
 
 ---
 ### Data parsing 
 
 **_Data parsing script_**
 
+The crashworthiness data is extracted from the simulation results using script '00_Data_parsing_to_figures'. This script extracts the metrics values and saves them in the file 'MODELS_DATABASE' in both CSV and Excel formats.
+
 ---
 ### Model database
 
 **_Model database excel_**
+
+The file 'MODELS_DATABASE' is generated for every seed and then we can append them to create a complete database of various configurations and their respective crashworthiness metric values. For this study only seeds 1-5 are used and them combined database file is 'MODELS_DATABASE_complete_TV' generated.
 
 ---
 ### Acknowledgement
