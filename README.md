@@ -16,7 +16,6 @@ The MODELS_DATABASE_complete_TV contains different configurations of the crash b
 
 Every structure contains some form of manufacturing or material impurities and this is often unknown. These impurities affect the structural behaviour. Therefore, numerical imperfection is manually added to simulate the realistic deformations of the crash box. To ensure the imperfection is not arbitrary, linear combinations of eigenmodes are used [1]. Therefore, initially, eigenmodes are investigated and used to define the numerical imperfection in the impact simulations.
 
-The script '00_Script_new_eigen' generates the model database and 'random seed' controls the randomness of the model variables, namely random variation of thickness and impact velocity in their respective limit.
 
 Every structure has manufacturing or material impurities which are often difficult to identify. These impurities influence the structural behaviour. Therefore, to simulate realistic deformations of the crash box, numerical imperfection is inserted to crate imperfect structure. Linear combinations of eigenmodes are used to ensure that the imperfection is not arbitrary [1]. Initially, eigenmodes are explored and used to define the numerical imperfection in the impact simulations. The imperfection is defined as nodal displacement in the script to generate an impact simulation model and is 1% of the thickness of the crash box. These eigenmodes are saved in the file 'Eigen_Job-(ii-1)', where (ii-1) job ID.
 
@@ -29,14 +28,14 @@ Every structure has manufacturing or material impurities which are often difficu
 
 ```
 
-The script '00_Script_new_eigen' generates the model database for eigenmode analysis, and the 'random seed' controls the randomness of the model variables. This randomness includes variations of thickness and impact velocity within their respective limits according to seed number. Finally, the 'model_database_eigen_sims' CSV file is generated which contains all the design variables of the crash box and impactor for eigenmode analysis.
+The Python script '00_Script_new_eigen' generates the model database and 'random seed' controls the randomness of the model variables, namely random variation of thickness and impact velocity in their respective limit. This randomness includes variations of thickness and impact velocity within their respective limits according to seed number. Finally, the 'model_database_eigen_sims' CSV file is generated which contains all the design variables of the crash box and impactor for eigenmode analysis.
 
 ---
 ### Impact simulations
 
 **_script for impact analysis???_**
 
-The script '00_Script_new_impact_sim_w_imperfection' generates the model database similar to eigenmode analysis and following the command inserts the corresponding imperfection in the crash box structure. Then, axial impact simulations are performed on the imperfect crash box. 
+The Python script '00_Script_new_impact_sim_w_imperfection' generates the model database similar to eigenmode analysis and following the command inserts the corresponding imperfection in the crash box structure. Then, axial impact simulations are performed on the imperfect crash box. 
 
 The complete FEM model properties are illustrated in the following table.
 
@@ -55,7 +54,7 @@ At the end of the completion of the script, the 'model_database_dynamic_impact_s
 ---
 ### Data parsing 
 
-The crashworthiness data is extracted from the simulation results using script '00_Data_parsing_to_figures'. This script extracts the metrics values and saves them in the file 'MODELS_DATABASE' in both CSV and Excel formats. This script also creates images of all the energies of the crash box and reaction force-deformation graphs to understand the deformation pattern.
+The crashworthiness data is extracted from the simulation results using Python script '00_Data_parsing_to_figures'. This script extracts the metrics values and saves them in the file 'MODELS_DATABASE' in both CSV and Excel formats. This script also creates images of all the energies of the crash box and reaction force-deformation graphs to understand the deformation pattern.
 
 ---
 ### Database file
