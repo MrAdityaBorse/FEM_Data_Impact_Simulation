@@ -9,7 +9,7 @@ The content of this repository can be used according to *License*.
 
 The crash box is one of the energy-absorbing structures in automobiles. Its deformation mechanism under frontal impact loading has already been comprehensively studied in various studies. Data from impact simulations performed in Simulia ABAQUS (version 2021) has been used to generate a simulation database for the ML framework, which can be found and accessed here. 
 
-![simulation method depiction](simulation method simple.pdf)
+![simulation method depiction](/assets/simulation_method_simple.pdf)
 
 The MODELS_DATABASE_complete_TV contains different configurations of the crash box, along with their respective crashworthiness metric values. The configurations in the database have varying thicknesses and impact velocities while keeping other design parameters constant.
 
