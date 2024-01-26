@@ -53,7 +53,7 @@ The complete FEM model properties are described in the following table.
 
 At the end of the completion of the script, the 'model_database_dynamic_impact_sims' CSV file is generated which contains all the design variables (similar to 'model_database_eigen_sims') of the crash box and impactor. Also, the evolution of the output variables over time steps, energies, namely reaction forces and displacement, are saved in the file 'Dynamic_Job_ID_Energies_RF_U', where ID is job ID.
 
-![Video of deformation pattern](Assets/Job_16_Animation.avi)
+![Video of deformation pattern](Assets/Job_16_Animation.mp4)
 
 https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/assets/157474877/754f801b-b082-4b01-85e1-5ae73e93dc8c
 
