@@ -1,4 +1,4 @@
-# Repository of FEM axial impact simulations of the crash box
+# Repository of axial impacted simulations of the crash box
 
 This repository contains the database developed to be used in machine learning (ML) methods in the GAMM 23 [conference article](https://onlinelibrary.wiley.com/doi/full/10.1002/pamm.202300145).
 
