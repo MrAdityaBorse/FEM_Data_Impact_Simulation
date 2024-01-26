@@ -28,20 +28,20 @@ Every structure has manufacturing or material impurities which are often difficu
 
 ```
 
-The Python script '00_Script_new_eigen' generates the model database and 'random seed' controls the randomness of the model variables, namely random variation of thickness and impact velocity in their respective limit. This randomness includes variations of thickness and impact velocity within their respective limits according to seed number. Finally, the 'model_database_eigen_sims' CSV file is generated which contains all the design variables of the crash box and impactor for eigenmode analysis.
+The Python script '00_Script_new_eigen' generates the model database and 'random seed' controls the randomness of the model variables, namely random variation of thickness and impact velocity in their respective limit. This randomness includes variations of thickness and impact velocity within their respective limits according to seed number. The uploaded script is for seed(1) ( line no. 26) and the user can change them. 
+
+Finally, the 'model_database_eigen_sims' CSV file is generated which contains all the design variables of the crash box and impactor for eigenmode analysis. The database contains the width, height, thickness and length of the crash box along with impact velocity and impactor mass as design variables. 
 
 ---
 ### Impact simulations
 
-**_script for impact analysis???_**
+The Python script '00_Script_new_impact_sim_w_imperfection' generates the model database similar to eigenmode analysis and following the command inserts the corresponding imperfection in the crash box structure. Then, axial impact simulations are performed on the imperfect crash box. Similar to the Python script '00_Script_new_eigen', this script has a 'random seed' that controls the randomness of the model variables, namely random variation of thickness and impact velocity in their respective limit. The uploaded script is for seed(1) ( line no. 26) and the user can change them. 
 
-The Python script '00_Script_new_impact_sim_w_imperfection' generates the model database similar to eigenmode analysis and following the command inserts the corresponding imperfection in the crash box structure. Then, axial impact simulations are performed on the imperfect crash box. 
-
-The complete FEM model properties are illustrated in the following table.
+The complete FEM model properties are described in the following table.
 
 ### FEM settings
 
-| Property  | Value |
+| Properties | Values |
 | ------------- | ------------- |
 | Material | Density=2.7E-09 Young's Modulus=69000/ Poisson's ratio=0.33/ Plasticity table= 80 MPa - 0 and 173 MPa - 0.174 |
 | Mesh | Size=0.2/ Elements=S4R |
@@ -49,17 +49,17 @@ The complete FEM model properties are illustrated in the following table.
 | Contact | Frictional coefficient=0.25/ normal "Hard" contact |
 | Impact initial velocity  | As per configuration (listed in the database) |
 
-At the end of the completion of the script, the 'model_database_dynamic_impact_sims' CSV file is generated which contains all the design variables of the crash box and impactor. Also, the evolution of the output variables over time steps, energies, namely reaction forces and displacement, are saved in the file 'Dynamic_Job_ID_Energies_RF_U', where ID is job ID.
+At the end of the completion of the script, the 'model_database_dynamic_impact_sims' CSV file is generated which contains all the design variables (similar to 'model_database_eigen_sims') of the crash box and impactor. Also, the evolution of the output variables over time steps, energies, namely reaction forces and displacement, are saved in the file 'Dynamic_Job_ID_Energies_RF_U', where ID is job ID.
 
 ---
 ### Data parsing 
 
-The crashworthiness data is extracted from the simulation results using Python script '00_Data_parsing_to_figures'. This script extracts the metrics values and saves them in the file 'MODELS_DATABASE' in both CSV and Excel formats. This script also creates images of all the energies of the crash box and reaction force-deformation graphs to understand the deformation pattern.
+The crashworthiness data is extracted from the simulation results using Python script '00_Data_parsing_to_figures'. This script extracts the crashworthiness metrics values and saves them in the file 'MODELS_DATABASE' in both CSV and Excel formats. This script also creates images of all the energies of the crash box and reaction force-deformation graphs to understand the deformation pattern.
 
 ---
 ### Database file
 
-The file 'MODELS_DATABASE' is generated for every seed and then we can append them to create a complete database of various designs and their respective crashworthiness metric values. For this study, only seeds 1-5 are used and the combined database file is 'MODELS_DATABASE_complete_TV' generated.
+The file 'MODELS_DATABASE' is generated for every seed and then we can append them to create a complete database of various designs and their respective crashworthiness metric values. For this study, only seeds 1-5 are used and the combined database file is 'MODELS_DATABASE_complete_TV' generated. The database contains the width, height, thickness and length of the crash box along with impact velocity and impactor mass as design variables and initial peak contact force (IPCF), total energy absorbed, maximum deformed length of the crash box, mean contact force and mass of the crash box as crashworthiness metrics.
 
 ---
 ### Acknowledgement
