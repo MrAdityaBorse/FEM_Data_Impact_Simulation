@@ -9,6 +9,8 @@ The content of this repository can be used according to *License*.
 
 The crash box is one of the energy-absorbing structures in automobiles. Its deformation mechanism under frontal impact loading has already been comprehensively studied in various studies. Data from impact simulations performed in Simulia ABAQUS (version 2021) has been used to generate a simulation database for the ML framework, which can be found and accessed here. 
 
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+
 The MODELS_DATABASE_complete_TV contains different configurations of the crash box, along with their respective crashworthiness metric values. The configurations in the database have varying thicknesses and impact velocities while keeping other design parameters constant.
 
 ---
