@@ -18,7 +18,6 @@ The MODELS_DATABASE_complete_TV contains different configurations of the crash b
 
 Every structure contains some form of manufacturing or material impurities and this is often unknown. These impurities affect the structural behaviour. Therefore, numerical imperfection is manually added to simulate the realistic deformations of the crash box. To ensure the imperfection is not arbitrary, linear combinations of eigenmodes are used [1]. Therefore, initially, eigenmodes are investigated and used to define the numerical imperfection in the impact simulations.
 
-
 Every structure has manufacturing or material impurities which are often difficult to identify. These impurities influence the structural behaviour. Therefore, to simulate realistic deformations of the crash box, numerical imperfection is inserted to crate imperfect structure. Linear combinations of eigenmodes are used to ensure that the imperfection is not arbitrary [1]. Initially, eigenmodes are explored and used to define the numerical imperfection in the impact simulations. The imperfection is defined as nodal displacement in the script to generate an impact simulation model and is 1% of the thickness of the crash box. These eigenmodes are saved in the file 'Eigen_Job-(ii-1)', where (ii-1) job ID.
 
 ```
@@ -54,6 +53,8 @@ The complete FEM model properties are described in the following table.
 At the end of the completion of the script, the 'model_database_dynamic_impact_sims' CSV file is generated which contains all the design variables (similar to 'model_database_eigen_sims') of the crash box and impactor. Also, the evolution of the output variables over time steps, energies, namely reaction forces and displacement, are saved in the file 'Dynamic_Job_ID_Energies_RF_U', where ID is job ID.
 
 https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/assets/157474877/64d79456-8197-4fdb-885b-b424bdd1a004
+
+The final deformation pattern of Job-16 using seed(1) is shown in the figure and the above video shows the development of deformation.
 
 ---
 ### Data parsing 
