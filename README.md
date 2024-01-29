@@ -14,7 +14,7 @@ The crash box is one of the energy-absorbing structures in automobiles. Its defo
 The MODELS_DATABASE_complete_TV contains different configurations of the crash box, along with their respective crashworthiness metric values. The configurations in the database have varying thicknesses and impact velocities while keeping other design parameters constant.
 
 ---
-### Eigenmode analysis
+#### Eigenmode analysis
 
 Every structure contains some form of manufacturing or material impurities and this is often unknown. These impurities affect the structural behaviour. Therefore, numerical imperfection is manually added to simulate the realistic deformations of the crash box. To ensure the imperfection is not arbitrary, linear combinations of eigenmodes are used [1]. Therefore, initially, eigenmodes are investigated and used to define the numerical imperfection in the impact simulations.
 
@@ -35,7 +35,7 @@ The Python script '00_Script_new_eigen' generates the model database and 'random
 Finally, the 'model_database_eigen_sims' CSV file is generated which contains all the design variables of the crash box and impactor for eigenmode analysis. The database contains the width, height, thickness and length of the crash box along with impact velocity and impactor mass as design variables. 
 
 ---
-### Impact simulations
+#### Impact simulations
 
 The Python script '00_Script_new_impact_sim_w_imperfection' generates the model database similar to eigenmode analysis and following the command inserts the corresponding imperfection in the crash box structure. Then, axial impact simulations are performed on the imperfect crash box. Similar to the Python script '00_Script_new_eigen', this script has a 'random seed' that controls the randomness of the model variables, namely random variation of thickness and impact velocity in their respective limit. The uploaded script is for seed(1) ( line no. 26) and the user can change them. 
 
@@ -56,7 +56,7 @@ At the end of the completion of the script, the 'model_database_dynamic_impact_s
 https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/assets/157474877/64d79456-8197-4fdb-885b-b424bdd1a004
 
 ---
-### Data parsing 
+#### Data parsing 
 
 The crashworthiness data is extracted from the simulation results using Python script '00_Data_parsing_to_figures'. This script extracts the crashworthiness metrics values and saves them in the file 'MODELS_DATABASE' in both CSV and Excel formats. This script also creates images of all the energies of the crash box and reaction force-deformation graphs to understand the deformation pattern.
 
