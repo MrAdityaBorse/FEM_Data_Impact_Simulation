@@ -77,6 +77,14 @@ Thus, the steps to create the database is:
 The file 'MODELS_DATABASE' is generated for every seed and then we can append them to create a complete database of various designs and their respective crashworthiness metric values. For this study, only seeds 1-5 are used and the combined database file is 'MODELS_DATABASE_complete_TV' generated. The database contains the width, height, thickness and length of the crash box along with impact velocity and impactor mass as design variables and initial peak contact force (IPCF), total energy absorbed, maximum deformed length of the crash box, mean contact force and mass of the crash box as crashworthiness metrics.
 
 ---
+### Importing database
+
+![Data_import_analysis](https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/assets/Data_import_analysis.svg
+
+
+---
+
+---
 ### Acknowledgement
 
 The authors gratefully acknowledge the financial support provided by Deutsche Forschungsgemeinschaft Priority Programme: SPP 2353 (DFG Grant No. STO 469/16-1) for this investigation.
