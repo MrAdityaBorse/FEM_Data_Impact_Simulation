@@ -54,6 +54,7 @@ At the end of the completion of the script, the 'model_database_dynamic_impact_s
 
 https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/assets/157474877/64d79456-8197-4fdb-885b-b424bdd1a004
 
+
 The final deformation pattern of Job-16 using seed(1) is shown in the figure and the above video shows the development of deformation.
 
 ---
@@ -79,7 +80,9 @@ The file 'MODELS_DATABASE' is generated for every seed and then we can append th
 ---
 ### Importing database
 
-![Data_import_analysis](https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/assets/Data_import_analysis.png)
+A sample script to import the database and analysis is uploaded with the name 'Loading database and analysing.ipnynb'. Sample data analysis is illustrated in the following image. The correlation matrix and crashworthiness metric (total energy absorbed) over differnt design parameters are shown, on the left and right respectively. Users can conduct similar data analysis to focus on the area of interest.
+
+![Data_import_analysis](Assets/Data_import_analysis.png)
 
 
 ---
