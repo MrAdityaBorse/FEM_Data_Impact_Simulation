@@ -82,7 +82,7 @@ The file 'MODELS_DATABASE' is generated for every seed and then we can append th
 The authors gratefully acknowledge the financial support provided by Deutsche Forschungsgemeinschaft Priority Programme: SPP 2353 (DFG Grant No. STO 469/16-1) for this investigation.
 
 ---
-### references
+### References
 
 1.  J. Arbocz. Post-buckling behaviour of structures numerical techniques for more complicated structures, pages 83–142. Springer Berlin Heidelberg, Berlin, Heidelberg, 1987.
 
