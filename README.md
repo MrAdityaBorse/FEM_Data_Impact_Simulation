@@ -79,7 +79,7 @@ The file 'MODELS_DATABASE' is generated for every seed and then we can append th
 ---
 ### Importing database
 
-![Data_import_analysis](https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/assets/Data_import_analysis.svg
+![Data_import_analysis](https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/assets/Data_import_analysis.png)
 
 
 ---
