@@ -84,9 +84,6 @@ A sample script to import the database and analysis is uploaded with the name 'L
 
 ![Data_import_analysis](Assets/Data_import_analysis.png)
 
-
----
-
 ---
 ### Acknowledgement
 
