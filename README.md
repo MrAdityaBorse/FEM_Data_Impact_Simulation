@@ -2,7 +2,7 @@
 
 This repository contains the database developed to be used in machine learning (ML) methods in the GAMM 23 [conference article](https://onlinelibrary.wiley.com/doi/full/10.1002/pamm.202300145).
 
-The content of this repository can be used according to *License* ![license](Licnese).
+The content of this repository can be used according to the ![license](\LICENSE).
 
 ---
 ### Investigating crash box for crashworthiness 
