@@ -11,7 +11,7 @@ The crash box is one of the energy-absorbing structures in automobiles. Its defo
 
 ![simulation method depiction](Assets/Simulation_method_simple.png)
 
-The MODELS_DATABASE_complete_TV contains different configurations of the crash box, along with their respective crashworthiness metric values. The configurations in the database have varying thicknesses and impact velocities while keeping other design parameters constant.
+The 'MODELS_DATABASE_complete_TV' contains different configurations of the crash box, along with their respective crashworthiness metric values. The configurations in the database have varying thicknesses and impact velocities while keeping other design parameters constant.
 
 ---
 ### Eigenmode analysis
@@ -87,7 +87,7 @@ A sample script to import the database and analysis is uploaded with the name 'L
 ---
 ### Acknowledgement
 
-The authors gratefully acknowledge the financial support provided by Deutsche Forschungsgemeinschaft Priority Programme: SPP 2353 (DFG Grant No. STO 469/16-1) for this investigation.
+The authors gratefully acknowledge the financial support provided by Deutsche Forschungsgemeinschaft Priority Programme: SPP 2353 (DFG Grant No. STO 469/16-1) for this research.
 
 ---
 ### References
