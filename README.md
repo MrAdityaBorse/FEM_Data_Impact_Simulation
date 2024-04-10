@@ -86,8 +86,9 @@ A sample script to import the database and analysis is provided with the name 'L
 
 For example, if the maximum deformed length and total energy absorbed are the important objectives, the following (right) graph can be obtained where the red points denote the Pareto front solutions. These points denote the non-dominant solutions where both objectives have equal importance. This kind of analysis could be performed on the objectives to understand the correlation between the crashworthiness objectives. Thereby, the optimisation process and the inequality constraints of the crashworthiness objectives could be determined to formulate the complete optimisation problem.
 
-![Data_import_analysis](Assets/Pareto_front.png)
-
+<p align="center">
+<img src="https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/blob/main/Assets/Pareto_front.png" width="400" height="300">
+</p>
 ---
 ### Acknowledgement
 
