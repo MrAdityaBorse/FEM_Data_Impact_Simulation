@@ -80,7 +80,11 @@ The file 'MODELS_DATABASE' is generated for every seed and then we can append th
 ---
 ### Importing database
 
-A sample script to import the database and analysis is uploaded with the name 'Loading database and analysing.ipnynb'. Sample data analysis is illustrated in the following image. The correlation matrix and crashworthiness metric (total energy absorbed) over differnt design parameters are shown, on the left and right respectively. Users can conduct similar data analysis to focus on the area of interest.
+A sample script to import the database and analysis is provided with the name 'Loading database and analysing.ipynb'. Sample data analysis is also illustrated in the following image. The correlation matrix and crashworthiness metric (total energy absorbed) over crash box design parameters are illustrated in the following image, on the left and right respectively. Users can conduct similar data analysis to focus on the area of interest.
+
+![Data_import_analysis](Assets/Data_import_analysis.png)
+
+For example, if the maximum deformed length and total energy absorbed are the important objectives, the following (right) graph can be obtained where the red points denote the Pareto front solutions. These points denote the non-dominant solutions where both objectives have equal importance. This kind of analysis could be performed on the objectives to understand the correlation between the crashworthiness objectives. Thereby, the optimisation process and the inequality constraints of the crashworthiness objectives could be determined to formulate the complete optimisation problem.
 
 ![Data_import_analysis](Assets/Data_import_analysis.png)
 
