@@ -89,6 +89,7 @@ For example, if the maximum deformed length and total energy absorbed are the im
 <p align="center">
 <img src="https://github.com/MrAdityaBorse/FEM_Data_Impact_Simulation/blob/main/Assets/Pareto_front.png" width="500" height="400">
 </p>
+
 ---
 ### Acknowledgement
 
